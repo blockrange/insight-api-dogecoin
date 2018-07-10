@@ -30,7 +30,7 @@ function Address(addrStr) {
   this.unspent = [];
 
   var a = new BitcoreAddress(addrStr);
-  a.validate();
+  // a.validate();
   this.addrStr = addrStr;
 
   Object.defineProperty(this, 'totalSent', {
